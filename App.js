@@ -57,11 +57,7 @@ async function startUP() {
   require("./startup/config")();
   require("./startup/cors")(app);
   await require("./startup/db")(logger);
-  await require("./startup/mail")(app);
-
   require("./startup/routes")(app);
-
-  //require("./startup/validation")();
   require("./startup/socket")(io, app, logger);
 }
 app.get("/", async (req, res) => {
