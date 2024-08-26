@@ -1,1 +1,1 @@
-"# astra" 1
+mongodb://deltauser:bNEnFajA5y6cZLQJ@deltawire-shard-00-00.wqkli.mongodb.net:27017,deltawire-shard-00-01.wqkli.mongodb.net:27017,deltawire-shard-00-02.wqkli.mongodb.net:27017/?ssl=true&replicaSet=atlas-mq3028-shard-0&authSource=admin&retryWrites=true&w=majority&appName=deltawire

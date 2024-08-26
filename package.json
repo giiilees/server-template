@@ -1,7 +1,7 @@
 {
-  "name": "rectcoin",
+  "name": "template",
   "version": "1.0.0",
-  "description": "BlockChain System for banking app",
+  "description": "",
   "main": "App.js",
   "scripts": {
     "start": "node --trace-warnings App.js",
@@ -10,10 +10,9 @@
   "engines": {
     "node": "18"
   },
-  "author": "Ghiles Lagha",
+  "author": "Deltawire",
   "license": "MIT",
   "dependencies": {
-    "@sendgrid/mail": "^7.7.0",
     "apisauce": "^2.1.5",
     "axios": "^0.24.0",
     "bcrypt": "^5.0.1",
@@ -35,7 +34,6 @@
     "sharp": "^0.31.3",
     "sharp-multer": "^0.3.2",
     "socket.io": "^4.3.1",
-    "stripe": "^10.8.0",
     "uuid": "^9.0.0",
     "winston": "^3.11.0"
   }
