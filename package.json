@@ -1,0 +1,42 @@
+{
+  "name": "rectcoin",
+  "version": "1.0.0",
+  "description": "BlockChain System for banking app",
+  "main": "App.js",
+  "scripts": {
+    "start": "node --trace-warnings App.js",
+    "mon": "nodemon --trace-warnings App.js"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "author": "Ghiles Lagha",
+  "license": "MIT",
+  "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
+    "apisauce": "^2.1.5",
+    "axios": "^0.24.0",
+    "bcrypt": "^5.0.1",
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "elliptic": "^6.5.4",
+    "expo-server-sdk": "^3.7.0",
+    "express": "^4.17.1",
+    "express-async-errors": "2.1.0",
+    "joi": "^17.5.0",
+    "joi-objectid": "2.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "mongoose": "^5.13.13",
+    "multer": "^1.4.5-lts.1",
+    "node-mailjet": "^6.0.2",
+    "sharp": "^0.31.3",
+    "sharp-multer": "^0.3.2",
+    "socket.io": "^4.3.1",
+    "stripe": "^10.8.0",
+    "uuid": "^9.0.0",
+    "winston": "^3.11.0"
+  }
+}

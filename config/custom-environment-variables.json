@@ -1,0 +1,9 @@
+{
+  "jwtPrivateKey": "delta_PrivateKey",
+  "db": "delta_db",
+  "requiresAuth": "delta_auth",
+  "stripepublic": "delta_pkey",
+  "stripeprivate": "delta_pkeyprivate",
+  "mail": "delta_mail",
+  "google": "delta_google"
+}
