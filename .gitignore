@@ -2,6 +2,4 @@
 node_modules/
 logfile.log
 public/uploads
-
-config/default.json
 uncaughtExceptions.log

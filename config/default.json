@@ -1,0 +1,8 @@
+{
+  "jwtPrivateKey": "CkNey2wbW9u5-pFFSRjJAGn9b-OZrVtofM_RVSdO16w",
+  "db": "",
+  "port": "6701",
+  "sessiontime": 25,
+  "codetime": 10,
+  "requiresAuth": true
+}
