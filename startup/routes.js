@@ -4,6 +4,8 @@ const error = require("../middleware/error");
 const media = require("../routes/media");
 const user = require("../routes/user");
 const test = require("../routes/test");
+const users = require("../routes/users");
+const posts = require("../routes/posts");
 
 module.exports = function (app) {
   app.use(express.json());
@@ -11,6 +13,8 @@ module.exports = function (app) {
   app.use("/media", media);
   app.use("/user", user);
   app.use("/test", test);
+  app.use("/users", users);
+  app.use("/posts", posts);
 
   app.use(error);
 };

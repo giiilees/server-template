@@ -66,4 +66,7 @@ exports.commonUtils = {
       endOfDay,
     };
   },
+  findObjectById: (array, key, id) => {
+    return array.filter((obj) => obj[key] === parseInt(id));
+  },
 };
