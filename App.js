@@ -61,7 +61,7 @@ async function startUP() {
   require("./startup/socket")(io, app, logger);
 }
 app.get("/", async (req, res) => {
-  res.send("template server");
+  res.send("Template server");
 });
 
 startUP();

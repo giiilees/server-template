@@ -1,0 +1,338 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "username": "johndoe",
+      "email": "john.doe@example.com",
+      "profilePicture": "https://example.com/images/johndoe.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "username": "janesmith",
+      "email": "jane.smith@example.com",
+      "profilePicture": "https://example.com/images/janesmith.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Alice Brown",
+      "username": "aliceb",
+      "email": "alice.brown@example.com",
+      "profilePicture": "https://example.com/images/aliceb.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Bob Johnson",
+      "username": "bobj",
+      "email": "bob.johnson@example.com",
+      "profilePicture": "https://example.com/images/bobj.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Charlie Lee",
+      "username": "charliel",
+      "email": "charlie.lee@example.com",
+      "profilePicture": "https://example.com/images/charliel.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Diane Green",
+      "username": "dianeg",
+      "email": "diane.green@example.com",
+      "profilePicture": "https://example.com/images/dianeg.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Evan Wright",
+      "username": "evanw",
+      "email": "evan.wright@example.com",
+      "profilePicture": "https://example.com/images/evanw.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Fiona Harris",
+      "username": "fionah",
+      "email": "fiona.harris@example.com",
+      "profilePicture": "https://example.com/images/fionah.jpg"
+    },
+    {
+      "id": 9,
+      "name": "George Young",
+      "username": "georgey",
+      "email": "george.young@example.com",
+      "profilePicture": "https://example.com/images/georgey.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Hannah Scott",
+      "username": "hannahs",
+      "email": "hannah.scott@example.com",
+      "profilePicture": "https://example.com/images/hannahs.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Ian Clarke",
+      "username": "ianc",
+      "email": "ian.clarke@example.com",
+      "profilePicture": "https://example.com/images/ianc.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Julia Adams",
+      "username": "juliae",
+      "email": "julia.adams@example.com",
+      "profilePicture": "https://example.com/images/juliae.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Kevin Turner",
+      "username": "kevint",
+      "email": "kevin.turner@example.com",
+      "profilePicture": "https://example.com/images/kevint.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Laura Bennett",
+      "username": "laurab",
+      "email": "laura.bennett@example.com",
+      "profilePicture": "https://example.com/images/laurab.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Michael Wilson",
+      "username": "michaelw",
+      "email": "michael.wilson@example.com",
+      "profilePicture": "https://example.com/images/michaelw.jpg"
+    }
+  ],
+  "posts": [
+    {
+      "id": 101,
+      "title": "How to Learn JavaScript",
+      "body": "JavaScript is a versatile language...",
+      "authorId": 1,
+      "createdAt": "2024-08-27T12:00:00Z",
+      "updatedAt": "2024-08-27T13:00:00Z"
+    },
+    {
+      "id": 102,
+      "title": "Understanding REST APIs",
+      "body": "REST APIs are a crucial part of web development...",
+      "authorId": 2,
+      "createdAt": "2024-08-26T10:00:00Z",
+      "updatedAt": "2024-08-26T11:30:00Z"
+    },
+    {
+      "id": 103,
+      "title": "CSS Grid vs Flexbox",
+      "body": "CSS Grid and Flexbox are both powerful layout systems...",
+      "authorId": 3,
+      "createdAt": "2024-08-25T09:00:00Z",
+      "updatedAt": "2024-08-25T10:15:00Z"
+    },
+    {
+      "id": 104,
+      "title": "Responsive Web Design",
+      "body": "Responsive design is key to modern web development...",
+      "authorId": 4,
+      "createdAt": "2024-08-24T14:30:00Z",
+      "updatedAt": "2024-08-24T15:45:00Z"
+    },
+    {
+      "id": 105,
+      "title": "Version Control with Git",
+      "body": "Git is an essential tool for developers...",
+      "authorId": 5,
+      "createdAt": "2024-08-23T11:00:00Z",
+      "updatedAt": "2024-08-23T12:20:00Z"
+    },
+    {
+      "id": 106,
+      "title": "Introduction to React",
+      "body": "React is a popular JavaScript library for building user interfaces...",
+      "authorId": 6,
+      "createdAt": "2024-08-22T08:00:00Z",
+      "updatedAt": "2024-08-22T09:10:00Z"
+    },
+    {
+      "id": 107,
+      "title": "Asynchronous JavaScript",
+      "body": "Understanding asynchronous JavaScript is crucial for modern web development...",
+      "authorId": 7,
+      "createdAt": "2024-08-21T07:30:00Z",
+      "updatedAt": "2024-08-21T08:45:00Z"
+    },
+    {
+      "id": 108,
+      "title": "Web Accessibility Basics",
+      "body": "Web accessibility ensures that websites can be used by everyone...",
+      "authorId": 8,
+      "createdAt": "2024-08-20T06:00:00Z",
+      "updatedAt": "2024-08-20T07:10:00Z"
+    },
+    {
+      "id": 109,
+      "title": "APIs for Beginners",
+      "body": "APIs allow different software systems to communicate with each other...",
+      "authorId": 9,
+      "createdAt": "2024-08-19T05:00:00Z",
+      "updatedAt": "2024-08-19T06:30:00Z"
+    },
+    {
+      "id": 110,
+      "title": "Building Single Page Applications",
+      "body": "Single Page Applications (SPAs) are web apps that load a single HTML page...",
+      "authorId": 10,
+      "createdAt": "2024-08-18T03:00:00Z",
+      "updatedAt": "2024-08-18T04:20:00Z"
+    },
+    {
+      "id": 111,
+      "title": "Introduction to Node.js",
+      "body": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine...",
+      "authorId": 11,
+      "createdAt": "2024-08-17T02:00:00Z",
+      "updatedAt": "2024-08-17T03:10:00Z"
+    },
+    {
+      "id": 112,
+      "title": "Testing in JavaScript",
+      "body": "Testing is a crucial part of the software development process...",
+      "authorId": 12,
+      "createdAt": "2024-08-16T01:00:00Z",
+      "updatedAt": "2024-08-16T02:15:00Z"
+    },
+    {
+      "id": 113,
+      "title": "Web Security Best Practices",
+      "body": "Web security is an essential aspect of web development...",
+      "authorId": 13,
+      "createdAt": "2024-08-15T12:00:00Z",
+      "updatedAt": "2024-08-15T13:25:00Z"
+    },
+    {
+      "id": 114,
+      "title": "Building RESTful APIs",
+      "body": "RESTful APIs are a standard way of building web services...",
+      "authorId": 14,
+      "createdAt": "2024-08-14T10:00:00Z",
+      "updatedAt": "2024-08-14T11:35:00Z"
+    },
+    {
+      "id": 115,
+      "title": "JavaScript Design Patterns",
+      "body": "Design patterns are reusable solutions to common problems in software design...",
+      "authorId": 15,
+      "createdAt": "2024-08-13T09:00:00Z",
+      "updatedAt": "2024-08-13T10:40:00Z"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1001,
+      "postId": 101,
+      "author": "Alice Brown",
+      "body": "Great article! This really helped me understand JavaScript better.",
+      "createdAt": "2024-08-27T14:00:00Z"
+    },
+    {
+      "id": 1002,
+      "postId": 102,
+      "author": "Bob Johnson",
+      "body": "Can you provide more examples of REST APIs?",
+      "createdAt": "2024-08-26T12:00:00Z"
+    },
+    {
+      "id": 1003,
+      "postId": 103,
+      "author": "Charlie Lee",
+      "body": "I've been struggling with CSS Grid. This clarified a lot!",
+      "createdAt": "2024-08-25T13:00:00Z"
+    },
+    {
+      "id": 1004,
+      "postId": 104,
+      "author": "Diane Green",
+      "body": "Responsive design is so important. Thanks for the tips!",
+      "createdAt": "2024-08-24T16:00:00Z"
+    },
+    {
+      "id": 1005,
+      "postId": 105,
+      "author": "Evan Wright",
+      "body": "I use Git daily. Great introduction for beginners.",
+      "createdAt": "2024-08-23T14:00:00Z"
+    },
+    {
+      "id": 1006,
+      "postId": 106,
+      "author": "Fiona Harris",
+      "body": "React is amazing! Can't wait to build something with it.",
+      "createdAt": "2024-08-22T15:00:00Z"
+    },
+    {
+      "id": 1007,
+      "postId": 107,
+      "author": "George Young",
+      "body": "Asynchronous JavaScript was always confusing. This helped!",
+      "createdAt": "2024-08-21T17:00:00Z"
+    },
+    {
+      "id": 1008,
+      "postId": 108,
+      "author": "Hannah Scott",
+      "body": "Accessibility should be a priority for every developer.",
+      "createdAt": "2024-08-20T19:00:00Z"
+    },
+    {
+      "id": 1009,
+      "postId": 109,
+      "author": "Ian Clarke",
+      "body": "APIs are the backbone of modern web development.",
+      "createdAt": "2024-08-19T16:00:00Z"
+    },
+    {
+      "id": 1010,
+      "postId": 110,
+      "author": "Julia Adams",
+      "body": "SPAs are the future. Great overview!",
+      "createdAt": "2024-08-18T18:00:00Z"
+    },
+    {
+      "id": 1011,
+      "postId": 111,
+      "author": "Kevin Turner",
+      "body": "Node.js opened up so many possibilities for JavaScript.",
+      "createdAt": "2024-08-17T20:00:00Z"
+    },
+    {
+      "id": 1012,
+      "postId": 112,
+      "author": "Laura Bennett",
+      "body": "Testing is crucial for any serious developer.",
+      "createdAt": "2024-08-16T21:00:00Z"
+    },
+    {
+      "id": 1013,
+      "postId": 113,
+      "author": "Michael Wilson",
+      "body": "Security should be a priority from the start. Great article.",
+      "createdAt": "2024-08-15T22:00:00Z"
+    },
+    {
+      "id": 1014,
+      "postId": 114,
+      "author": "John Doe",
+      "body": "Building RESTful APIs can be challenging but rewarding.",
+      "createdAt": "2024-08-14T23:00:00Z"
+    },
+    {
+      "id": 1015,
+      "postId": 115,
+      "author": "Jane Smith",
+      "body": "Design patterns are so useful for organizing code.",
+      "createdAt": "2024-08-13T12:00:00Z"
+    }
+  ]
+}

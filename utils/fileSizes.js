@@ -1,1 +1,1 @@
-exports.fileSizes = [200, 400, 720];
+exports.fileSizes = [200, 400, 720, 1080];
