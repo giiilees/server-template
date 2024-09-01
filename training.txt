@@ -1,33 +1,26 @@
-// Entries :
-    // users
-    // posts
-    // comments
+/// Exercise 1
 
-// Enpoints:
-    // GET - /users : get all users.
-    // GET - /users/:id : get user by Id.
+// Create comments collection:
+// with properties :
+      "postId": ObjectID(Post) ,
+      "author": "Alice Brown",
+      "body": "Great article! This really helped me understand JavaScript better.",
+      "createdAt": Date.now()
 
-    // GET - /posts : get all posts.
-    // POST - /posts/one ( body: ID ) : get post by Id.
 
-    // POST - /users/posts ( body: ID ) : get all posts written 
-//by the same author ID
-    // POST - /posts/comments { body: postID} : get all comments for 
-//the postID
+/// Exercise 2
 
-    // GET - /posts/:postID : get one 
-//post with the data required:
+// ReCreate endpoint GET /post/comments; get all post comments.
 
-//    {
-    //     ...post,
-    //     author: {
-    //         ...author,
-    //     },
-    //     comments: [
-    //         {
-    //             ...comment
-    //         },
-    //         ...
-    //     ]
-//    }
+// Recreate endpoint GET /posts/one and add comments to it.
+
+    {
+        ...post,
+        author: {
+            // author object
+        },
+        comments: [
+            //comments Array
+        ]
+    }
 

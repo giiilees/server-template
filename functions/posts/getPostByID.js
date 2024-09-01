@@ -1,13 +1,15 @@
-const data = require("../../public/data/examples.json");
-const { commonUtils } = require("../../utils/common");
+const mongoose = require("mongoose");
+const { Post } = require("../../models/post");
 
 const getPostByID = async (req, res) => {
   let { postID } = req.body;
-  let posts = data["posts"];
 
-  let post = commonUtils.findObjectById(posts, "id", postID);
+  const result = await Post.Handle.findById(postID).populate("authorID");
 
-  res.send(post[0]);
+  res.send({
+    success: true,
+    data: result,
+  });
 };
 
 module.exports = getPostByID;

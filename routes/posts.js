@@ -1,13 +1,17 @@
 const express = require("express");
-const getAllPosts = require("../functions/posts/getAllPosts");
-const getPostByID = require("../functions/posts/getPostByID");
-const getPostComments = require("../functions/posts/getPostComments");
-const getPostData = require("../functions/posts/getPostData");
+const {
+  getAllPosts,
+  getPostByID,
+  getPostComments,
+  getPostData,
+  addPosts,
+} = require("../functions/posts");
 
 const router = express.Router();
 
 router.get("/", getAllPosts);
 router.post("/one", getPostByID);
+router.post("/add", addPosts);
 router.get("/:postID", getPostData);
 router.post("/comments", getPostComments);
 

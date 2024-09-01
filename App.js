@@ -20,11 +20,6 @@ let expo = new Expo({
 
 app.set("expo", expo);
 
-app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).send("Something went wrong!");
-});
-
 app.set("io", io);
 
 const logger = winston.createLogger({
@@ -65,6 +60,11 @@ app.get("/", async (req, res) => {
 });
 
 startUP();
+
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send("Something went wrong!");
+});
 
 const port = process.env.PORT || config.get("port");
 const delta = server.listen(port, () =>
