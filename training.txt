@@ -1,0 +1,33 @@
+// Entries :
+    // users
+    // posts
+    // comments
+
+// Enpoints:
+    // GET - /users : get all users.
+    // GET - /users/:id : get user by Id.
+
+    // GET - /posts : get all posts.
+    // POST - /posts/one ( body: ID ) : get post by Id.
+
+    // POST - /users/posts ( body: ID ) : get all posts written 
+//by the same author ID
+    // POST - /posts/comments { body: postID} : get all comments for 
+//the postID
+
+    // GET - /posts/:postID : get one 
+//post with the data required:
+
+//    {
+    //     ...post,
+    //     author: {
+    //         ...author,
+    //     },
+    //     comments: [
+    //         {
+    //             ...comment
+    //         },
+    //         ...
+    //     ]
+//    }
+
