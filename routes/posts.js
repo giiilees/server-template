@@ -12,7 +12,8 @@ const router = express.Router();
 router.get("/", getAllPosts);
 router.post("/one", getPostByID);
 router.post("/add", addPosts);
-router.get("/:postID", getPostData);
+
 router.post("/comments", getPostComments);
+router.get("/:postID", getPostData);
 
 module.exports = router;
