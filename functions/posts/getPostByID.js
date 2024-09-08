@@ -28,6 +28,7 @@ const getPostByID = async (req, res) => {
   res.send({
     ...obj,
     comments,
+    UserReq,
   });
 };
 
