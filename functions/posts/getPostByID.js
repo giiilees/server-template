@@ -1,8 +1,12 @@
 const { Comment } = require("../../models/comment");
 const { Post } = require("../../models/post");
 const { commonUtils } = require("../../utils/common");
+const jwt = require("jsonwebtoken");
+const config = require("config");
 
 const getPostByID = async (req, res) => {
+  let UserReq = req.user;
+
   let { postID } = req.body;
 
   const post = await Post.Handle.findById(postID).populate("authorID");

@@ -3,13 +3,11 @@ const data = require("../../public/data/examples.json");
 const _ = require("lodash");
 
 const addPosts = async (req, res) => {
-  let validatedBody = _.pick(req.body, [
-    "title",
-    "body",
-    "hidden",
-    "likes",
-    "authorID",
-  ]);
+  let user = req.user;
+
+  let reqBody = _.pick(req.body, ["title", "body", "hidden", "likes"]);
+
+  let validatedBody = { ...reqBody, authorID: user._id.toString() };
 
   const { error } = Post.validate(validatedBody);
   if (error) return res.status(400).send(error.details[0].message);

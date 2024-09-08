@@ -7,7 +7,9 @@ const login = async (req, res) => {
 
   let emailVerified = email.replace(" ", "");
 
-  const result = await User.Handle.findOne({ email: emailVerified });
+  const result = await User.Handle.findOne({ email: emailVerified }).select(
+    "password"
+  );
   if (!result)
     return res.status(404).send({
       success: false,

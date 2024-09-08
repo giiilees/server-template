@@ -6,12 +6,13 @@ const {
   getPostData,
   addPosts,
 } = require("../functions/posts");
+const authOnly = require("../middleware/authOnly");
 
 const router = express.Router();
 
 router.get("/", getAllPosts);
-router.post("/one", getPostByID);
-router.post("/add", addPosts);
+router.post("/one", authOnly, getPostByID);
+router.post("/add", authOnly, addPosts);
 
 router.post("/comments", getPostComments);
 router.get("/:postID", getPostData);
