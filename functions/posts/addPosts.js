@@ -5,7 +5,7 @@ const _ = require("lodash");
 const addPosts = async (req, res) => {
   let user = req.user;
 
-  let reqBody = _.pick(req.body, ["title", "body", "hidden", "likes"]);
+  let reqBody = _.pick(req.body, ["title", "body", "likes"]);
 
   let validatedBody = { ...reqBody, authorID: user._id.toString() };
 

@@ -14,6 +14,7 @@ const validate = async (req, res) => {
     if (!result) return res.status(401).send("User does not exist");
     res.send({
       success: true,
+      token,
       result,
     });
   } catch (error) {

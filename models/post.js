@@ -34,7 +34,6 @@ function validate(post) {
   const schema = Joi.object({
     title: Joi.string().min(5).max(250).required(),
     body: Joi.string().max(500).allow("", null),
-    hidden: Joi.boolean(),
     likes: Joi.number().integer(),
     authorID: Joi.string().max(250),
   });

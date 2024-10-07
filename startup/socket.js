@@ -5,7 +5,7 @@ module.exports = function (io, app, logger) {
     logger.info(socket.id + " Connected");
 
     socket.on("disconnect", function () {
-      //winston.info(socket.id + ' Disconnected')
+      logger.info(socket.id + " Disconnected");
     });
   });
 
