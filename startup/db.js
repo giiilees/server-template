@@ -15,7 +15,7 @@ module.exports = async function (logger) {
           useUnifiedTopology: true,
           useCreateIndex: true,
           useFindAndModify: false,
-          dbName: "test",
+          dbName: "ghileslagha",
         })
         .then(() => {
           loaded = true;

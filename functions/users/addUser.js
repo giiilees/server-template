@@ -1,5 +1,6 @@
 const { User } = require("../../models/user");
 const _ = require("lodash");
+const { commonUtils } = require("../../utils/common");
 
 const addUser = async (req, res) => {
   let validatedBody = _.pick(req.body, ["name", "username", "email"]);
@@ -13,8 +14,10 @@ const addUser = async (req, res) => {
   const user = new User.Handle(validatedBody);
   await user.hashPassword(req.body.password);
   user.createdAt = Date.now();
+  user.username = commonUtils.generateUsername(req.body.name);
   const final = await user.save();
-  res.send({ success: true, data: final });
+  let token = await user.generateAuthToken();
+  res.send({ success: true, data: final, token });
 };
 
 module.exports = addUser;

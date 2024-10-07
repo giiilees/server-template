@@ -62,7 +62,7 @@ const Handle = mongoose.model("User", schema);
 function validate(post) {
   const schema = Joi.object({
     name: Joi.string().max(250).required(),
-    username: Joi.string().alphanum().min(3).max(10).required(),
+
     email: Joi.string().email().max(250).required(),
     password: Joi.string().max(300).required(),
   });

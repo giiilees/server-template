@@ -69,4 +69,20 @@ exports.commonUtils = {
   findObjectById: (array, key, id) => {
     return array.filter((obj) => obj[key] === parseInt(id));
   },
+  generateUsername: function (fullName) {
+    // Remove spaces and non-alphanumeric characters
+    // Remove spaces and non-alphanumeric characters
+    let baseName = fullName.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+
+    // Limit baseName to 10 characters to allow for 5 random numbers at the end
+    if (baseName.length > 10) {
+      baseName = baseName.substring(0, 10);
+    }
+
+    // Generate 5 random digits
+    const randomDigits = Math.floor(10000 + Math.random() * 90000).toString();
+
+    // Combine the baseName with the random digits
+    return baseName + randomDigits;
+  },
 };
